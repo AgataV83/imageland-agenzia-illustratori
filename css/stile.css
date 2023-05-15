@@ -1,0 +1,346 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #fadda5;
+    margin: 0 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:-webkit-any-link:visited {
+    color: unset;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+  }
+  
+nav a:active {
+    text-decoration: underline;
+}
+
+h5 {
+    margin: 0;
+}
+
+nav a:hover {
+    color: black;
+}
+
+header, nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    line-height: 0%;
+    font-weight: bold;
+    font-size: 40px;
+    color: #000;
+
+}
+
+header {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+hr {
+    width: auto;
+    margin: 0;
+}
+
+section.hero h2 {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: left;
+    font-size: 40px;
+    font-weight:lighter;
+}
+
+section.card {
+    background-color: #FFDFBF;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px; 
+}
+
+section.card div {
+    transition: all 0.5s ease-in-out;
+}
+
+section.card div:hover {
+    transition: all 0.5s ease-in-out;
+    background-color: #FFCB97;
+}
+
+section.card h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+section.card a {
+    margin-top:10px;
+    font-size: 30px;
+    color: #008238 !important;
+}
+
+section.card a:link {
+    text-decoration: none;
+  }
+  
+section.card a:visited {
+    text-decoration: none;
+  }
+  
+section.card a:hover {
+    text-decoration: underline;
+  }
+  
+section.card a:active {
+    text-decoration: underline;
+}
+
+section.card img {
+    height: 389px;
+    object-fit: cover;
+    width: 100%;
+    resize: vertical;
+}
+
+footer {
+    width: auto;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer p {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+/* Css Author */
+
+.titolo h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin: auto;
+    padding: 50px;
+    width: auto;
+    font-style: inherit;
+}
+
+.orange {
+    background-color: #F4CB7A;
+    margin-bottom: 50px;
+}
+
+.azzurro {
+    background-color: #428CD1;
+    margin-bottom: 50px;
+}
+
+.green {
+    background-color: #02B14D;
+    margin-bottom: 50px;
+}
+
+.red {
+    background-color: #E03929;
+    margin-bottom: 50px;
+}
+
+.violet {
+    background-color: #BF93CA;
+    margin-bottom: 50px;
+}
+
+.peach {
+    background-color: #FF764F;
+    margin-bottom: 50px;
+}
+
+.turchese {
+    background-color: #C9E4F7;
+    margin-bottom: 50px;
+}
+
+section.biografia h3 {
+    text-align: left;
+    font-size: 25px;
+    max-width: 70%;
+    margin: auto;
+    line-height: 1.2;
+    padding-top: 30px;
+}
+
+section.galleria {
+    display: block;
+    grid-template-columns: none;
+    gap: 40px; 
+    background-color: transparent;
+}
+
+section.galleria .images {
+    display: flex;
+    justify-content: center;
+    margin: 24px;
+    gap: 24px;
+}
+
+section.galleria .images img {
+    max-width: auto;
+}
+
+section.closing .images {
+    display: block;
+    text-align: center;
+    padding: 24px;
+    margin: auto;
+}
+
+/*Responsive index*/
+
+@media (max-width: 700px) {
+    nav ul {
+        margin: 10px;
+    }
+    a {
+        font-size: 90%;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    section.hero h2 {
+        text-align: center;
+        line-height: 1.2;
+        font-size: 80%;
+    }
+    body {
+        background: #71CCB9;
+        margin: 0;
+    }
+    section.card {
+        background: #B6E4DA;
+        grid-template-columns: repeat(3,32,5%);
+        }
+        section.card img {
+            height: 389px/2;
+            display: flex;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            resize: vertical;
+        }
+    
+    section.card a {
+        margin-top: 10px;
+        font-size: 50%;
+    }
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    a {
+        font-size: 70%;
+    }
+    body {
+        background: #F8B6BA;
+    }
+    section.card {
+        background: #F8D7D9;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        
+    }
+    section.card a {
+        margin-top:10px;
+        font-size: 50%;
+        color: #E4407B !important;
+    }
+    section.card img {
+        height: 389px/2;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        resize: none;
+    }
+}
+
+/*Responsive Author*/
+
+@media (max-width: 700px) {
+    .titolo h2 {
+        font-size: 30px;
+        padding: 25px;
+    }
+    section.biografia h3 {
+        font-size: 15px;
+        max-width: 70%;
+        margin: auto;
+        line-height: 1.2;
+        padding-top: 15px;
+    }
+    section.galleria .images {
+        flex-direction: column;
+        justify-content: center;
+    }
+    section.galleria .images img {
+        margin: auto;
+        max-width: 70%;
+    }
+    .orange, .azzurro, .green, .red, .violet, .peach, .turchese {
+        margin-bottom: 25px;
+    }
+    section.closing .images {
+        max-width: 50%;
+        padding: 12px;
+        margin: auto;
+    }
+    
+}
